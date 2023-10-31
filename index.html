@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+    <title>Rock Paper Scissors</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <div class="menu">
+        <button id="switch" class="menu_item">Change theme</button>
+        <button class="reset-game menu_item">Reset Game</button>
+    </div>
+
+    <h1>Rock Paper Scissors</h1>
+    <div class="scores">
+        <p class="player">Player</p><span class="player-points"></span>
+        <span class="comp-points"></span><p class="comp">AI</p>
+        
+    </div>
+    
+    <section class="options">
+        <button data-option="Paper"><img src="images/Paper.png" alt="Paper Picture"></button>
+        <button data-option="Rock"><img src="images/Rock.jpg" alt="Rock Picture"></button>
+        <button data-option="Scissors"><img src="images/Scissors.jpg" alt="Scissors Picture"></button>
+    </section>
+
+    <div id="compElement" class="dots">
+    </div>
+
+    <div id="hiding" class="choices">
+        <div class="choices_inside">
+            <p class="player">
+                Player choice
+            </p>
+                <span class="player-choice"></span>
+                <span class="comp-choice"></span> 
+            <p class="comp">
+                Ai choice
+            </p>
+        </div>
+
+        <p class="result-text">You have won!</p>
+    </div>
+
+</body>
+</html>
